@@ -1,6 +1,6 @@
 # Feed Reader
 
-Feed Reader is a front-end solution to the [RSS Feed Reader challenge on Frontend Mentor](https://www.frontendmentor.io/). It presents a polished dashboard for keeping up with articles from multiple sources, with filtering, search, saved items, and several ways to browse a feed.
+Feed Reader is a front-end solution to the [RSS Feed Reader challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rss-feed-reader). It presents a polished dashboard for keeping up with articles from multiple sources, with filtering, search, saved items, and several ways to browse a feed.
 
 The project is built with plain HTML, CSS, and JavaScript. It is a self-contained interface prototype: articles and feed sources are sample data held in the browser while the page is open. It does not currently connect to RSS or Atom URLs, save state between reloads, or send email.
 

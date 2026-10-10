@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const SRC={"Smashing Magazine":["S","#d33a2c"],"Cloudflare Blog":["C","#f48120"],"Simon Willison":["S","#111"],"Josh Comeau":["J","#4f46e5"],"Figma Blog":["F","#111"],"CSS-Tricks":["C","#e5533d"],"web.dev":["W","#0a7bbd"],"Kent C. Dodds":["K","#2563eb"],"Sidebar.io":["S","#8b5cf6"],"NN Group":["N","#0f9d6a"],"UX Collective":["U","#2563eb"]};
 const TAGS={Design:["#fce7f3","#9d174d","Design"],Backend:["#fef3c7","#78350f","Backend & DevOps"],AI:["#ede9fe","#5b21b6","AI & ML"],Frontend:["#dbeafe","#1e40af","Frontend"],General:["#e5e7eb","#374151","General Tech"]};
 const CATS=[["Frontend","#2563eb",14,["CSS-Tricks",3],["Smashing Magazine",4],["Josh Comeau",2],["Kent C. Dodds",2],["web.dev",3]],["Design","#ec4899",11,["Sidebar.io",5],["NN Group",2],["Figma Blog",2],["UX Collective",2]],["Backend & DevOps","#f59e0b",8],["General Tech","#6366f1",6],["AI & ML","#8b5cf6",8]];

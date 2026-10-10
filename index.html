@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frontpage</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="logo"><i><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="1.8"><rect x="1.5" y="1.5" width="4.5" height="4.5" rx="1"/><rect x="8" y="8" width="4.5" height="4.5" rx="1"/></svg></i>Frontpage</div>
+  <nav class="tabs" id="tabs"><button class="tab on" data-t="feed">Feed</button><button class="tab" data-t="digest">Digest</button><button class="tab" data-t="discover">Discover</button></nav>
+  <div class="sp"></div>
+  <label class="search"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><path d="m11 11 3.5 3.5"/></svg><input id="q" placeholder="Search articles..." autocomplete="off"><span class="kbd">/</span></label>
+  <button class="ib" id="add" title="Add feed" aria-label="Add feed"><svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.6"><path d="M8 2v12M2 8h12"/></svg></button>
+  <div style="position:relative"><button class="av" id="av" aria-label="Account">MS</button>
+    <div class="menu" id="menu"><button data-m="theme">Toggle dark mode</button><button data-m="saved">View saved items</button><button data-m="reset">Reset demo</button></div></div>
+</header>
+<div class="main">
+<aside>
+  <button class="nav on" data-f="all"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2.5" width="12" height="11" rx="2"/><path d="M5 6h6M5 9h4"/></svg>All Items<b id="cAll">47</b></button>
+  <button class="nav" data-f="saved" style="margin-top:2px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 2.5h8v11L8 10.5 4 13.5z"/></svg>Saved<b id="cSaved">12</b></button>
+  <div class="sec">CATEGORIES</div>
+  <div id="cats"></div>
+  <button class="healthy" id="health"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#16a34a" stroke-width="1.4"><circle cx="8" cy="8" r="6"/><path d="m5.5 8 1.8 1.8L10.8 6.3"/></svg>All feeds healthy</button>
+</aside>
+<section class="content">
+  <div class="top">
+    <h1 id="title">All Items</h1><span class="sub" id="sub">47 unread</span><div class="sp"></div>
+    <div class="seg" id="views">
+      <button class="on" data-v="" aria-label="List view"><svg width="14" height="14" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button>
+      <button data-v="grid" aria-label="Grid view"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg></button>
+      <button data-v="compact" aria-label="Compact view"><svg width="14" height="14" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.3"><path d="M2 3h12M2 6h12M2 9h12M2 12h12"/></svg></button>
+    </div>
+    <button class="btn" id="sort"><svg width="12" height="12" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h8M2 12h4"/></svg><span>Newest</span></button>
+    <button class="btn" id="refresh"><svg id="rIc" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 8A5.5 5.5 0 1 1 11.8 4M13.5 2v3h-3"/></svg>Refresh</button>
+    <button class="btn" id="markall">Mark all read</button>
+  </div>
+  <button class="banner" id="banner"><svg width="12" height="12" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" fill="none"><path d="M8 14V2M3 7l5-5 5 5"/></svg>5 new items since your last visit</button>
+  <div class="feed" id="feed"></div>
+</section>
+</div>
+<div class="toast" id="toast"></div>
+<script src="scripts.js"></script>
+</body>
+</html>

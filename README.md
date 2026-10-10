@@ -18,30 +18,14 @@ The project is built with plain HTML, CSS, and JavaScript. It is a self-containe
 - Switch between light and dark themes; the initial theme follows the operating system preference.
 - Use the reset option in the account menu to restore the initial demo.
 
-## Run locally
-
-There is no build step or package installation.
-
-1. Clone or download this repository.
-2. Open `index.html` in a modern browser.
-
-For a local web server, run one of these commands from the project directory:
-
-```bash
-# Python 3
-python -m http.server 8000
-```
-
-Then visit [http://localhost:8000](http://localhost:8000).
-
 The page loads the Inter font from Google Fonts. If that request is unavailable, it falls back to system fonts.
 
 ## Project files
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Dashboard structure, navigation, controls, and article-feed container. |
-| `styles.css` | Layout, responsive styling, themes, and component states. |
+| File         | Purpose                                                                      |
+| ------------ | ---------------------------------------------------------------------------- |
+| `index.html` | Dashboard structure, navigation, controls, and article-feed container.       |
+| `styles.css` | Layout, responsive styling, themes, and component states.                    |
 | `scripts.js` | Sample feed data, rendering, filtering, sorting, and interface interactions. |
 
 ## Implementation notes
@@ -52,4 +36,4 @@ The “Add feed,” refresh, digest email, discover-follow, and feed-health cont
 
 ## Challenge
 
-This project was created as a solution to Frontend Mentor’s [RSS Feed Reader challenge](https://www.frontendmentor.io/). The challenge provided an opportunity to build a feed-reading dashboard and practice structuring an interface with multiple navigation states, article actions, display modes, and light and dark styling.
+This project was created as a solution to Frontend Mentor’s [RSS Feed Reader challenge](https://www.frontendmentor.io/challenges/rss-feed-reader). The challenge provided an opportunity to build a feed-reading dashboard and practice structuring an interface with multiple navigation states, article actions, display modes, and light and dark styling.

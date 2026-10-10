@@ -413,9 +413,16 @@ h1 {
   border-radius: 50%;
   background: var(--blue);
 }
-.item:not(.new) .unread,
 .item.read .unread {
   visibility: hidden;
+}
+.unread {
+  cursor: pointer;
+}
+.unread::after {
+  content: "";
+  position: absolute;
+  inset: -9px;
 }
 .meta {
   display: flex;
@@ -607,4 +614,37 @@ h1 {
     transition: none !important;
     animation: none !important;
   }
+}
+
+.fd b.err {
+  color: #dc2626;
+  font-weight: 600;
+}
+.healthy.bad {
+  color: #dc2626;
+}
+.banner[hidden] {
+  display: none;
+}
+.more {
+  display: block;
+  margin: 16px auto 28px;
+}
+.tag + .tag {
+  margin-left: 6px;
+}
+.pane .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.pane .row small {
+  display: block;
+  color: var(--soft);
+  font-size: 12px;
+}
+.pane a {
+  color: var(--blue);
 }
